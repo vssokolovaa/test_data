@@ -3,10 +3,15 @@ import pytest
 
 
 @pytest.fixture
+def url_users_default():
+    url_users_default = "https://reqres.in/api"
+    return url_users_default
+
+
+@pytest.fixture
 def session():
     sess = requests.Session()
     return sess
-
 
 @pytest.fixture
 def url_brewery_default():
